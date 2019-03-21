@@ -11,6 +11,6 @@ after the third part confirm the applicant's infomation, they release the certif
 - b. the users get the public_key from the certificate 
 - c. encrypt the message with the public_key.
 - d. send the ciphertext throught the http(others can't decrypt the ciphertext because they dont have the private_key).
-- e. the server receive the ciphertext and decrypt it with the private_key. \n
+- e. the server receive the ciphertext and decrypt it with the private_key. 
 
 the only problem is that: others can get the server's message because it is encrypted using the public_key
