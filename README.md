@@ -1,7 +1,7 @@
 # cryptography-pki
 
-1, use the key-generate.py to generate the private_key and the public_key and the self-signed certificate
-2, the encryption-test.py encrypt the message
+- 1, use the key-generate.py to generate the private_key and the public_key and the self-signed certificate
+- 2, the encryption-test.py encrypt the message
 3, the decryption-test.py decrypt the message(using public or use the certificate)
 
 steps:
