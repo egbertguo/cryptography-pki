@@ -11,6 +11,7 @@ import datetime
 
 # private key
 private_key = rsa.generate_private_key(public_exponent=65537, key_size=2048, backend=default_backend())
+print dir(private_key)
 with open('rsa_private_key.pem', 'wb') as f:
     f.write(private_key.private_bytes(encoding=serialization.Encoding.PEM, \
    					format=serialization.PrivateFormat.TraditionalOpenSSL,\

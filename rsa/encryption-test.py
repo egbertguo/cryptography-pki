@@ -37,7 +37,7 @@ print dir(cert)
 print cert.issuer
 public_key = cert.public_key()
 
-message = b'message with certificate'
+message = b'me'
 ciphertext = public_key.encrypt(
     message,
     padding.OAEP(
@@ -47,6 +47,8 @@ ciphertext = public_key.encrypt(
     )
 )
 
+print ciphertext
+print len(ciphertext)
 with open('data.txt', 'wb') as f:
     f.write(ciphertext)
 
